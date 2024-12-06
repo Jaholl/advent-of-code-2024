@@ -5,7 +5,6 @@ input = open('./d3/input.txt', 'r').read().strip()
 matches = re.findall(r'mul\((\d+),(\d+)\)|(do\(\))|(don\'t\(\))', input)
 
 total = 0
-print(matches)
 do_is_true = True
 
 for x,y,do,dont in matches:
