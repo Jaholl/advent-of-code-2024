@@ -1,4 +1,4 @@
-lines = open('input.txt', 'r').read().split('\n')
+lines = open('./d1/input.txt', 'r').read().split('\n')
 
 left = []
 right = []

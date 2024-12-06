@@ -1,6 +1,6 @@
 import re
 
-input = open('.\d2\input.txt', 'r').read().strip()
+input = open('./d2/input.txt', 'r').read().strip()
 
 reports = input.split('\n')
 
@@ -10,7 +10,7 @@ for report in reports:
     increase = None
     found = False
 
-    report_values_normal = [int(x) for x in re.findall('\d+', report)]
+    report_values_normal = [int(x) for x in re.findall(r'\d+', report)]
     for index in range(len(report_values_normal)):
         if(index + 1 == len(report_values_normal)):
             found = True
